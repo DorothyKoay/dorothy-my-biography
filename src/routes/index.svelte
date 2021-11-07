@@ -22,10 +22,20 @@
 	};
 </script>
 
-<div>
-	<Header title="My Biography" />
-	<Section {...myInfo} />
-	<Section {...myHobby} />
-	<Section {...myPersonality} />
-	<Footer gitHub="https://github.com/DorothyKoay/dorothy-my-biography" />
+<Header title="My Biography" />
+<div class="container-fluid">
+	<div class="card1 text-center">
+		<div class="row g-3">
+			<div class="col-lg-4">
+				<Section {...myInfo} />
+			</div>
+			<div class="col-lg-4">
+				<Section {...myHobby} />
+			</div>
+			<div class="col-lg-4">
+				<Section {...myPersonality} />
+			</div>
+		</div>
+	</div>
 </div>
+<Footer></Footer>
